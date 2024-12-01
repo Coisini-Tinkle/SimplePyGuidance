@@ -1,0 +1,21 @@
+---
+#global settings:
+time_end: 1000
+delta_time: 0.001
+eps: 1
+
+# object(target):
+t_v: 100
+t_a: 1
+t_theta: 0
+t_height_0: 600
+
+# missile:
+m_v: 200
+m_theta: 70
+
+# Guidance method
+# ["TrackingModel","ParallelModel","RatioModel"]
+guidance_method: "RatioModel"
+k: 3 #Proportional Guidance Coefficient, only useful in RatioModel
+...
